@@ -1,0 +1,6 @@
+{
+    "parent": "player_models:template/steve/body",
+    "textures": {
+        "skin": "player_models:skins/rman"
+    }
+}

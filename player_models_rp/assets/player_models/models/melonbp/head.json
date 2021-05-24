@@ -1,0 +1,6 @@
+{
+    "parent": "player_models:template/alex/head",
+    "textures": {
+        "skin": "player_models:skins/melonbp"
+    }
+}

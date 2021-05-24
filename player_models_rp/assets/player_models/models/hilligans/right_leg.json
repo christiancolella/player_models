@@ -1,0 +1,6 @@
+{
+    "parent": "player_models:template/steve/right_leg",
+    "textures": {
+        "skin": "player_models:skins/hilligans"
+    }
+}

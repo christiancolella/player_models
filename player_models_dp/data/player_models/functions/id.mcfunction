@@ -1,0 +1,2 @@
+execute if score @s id = @e[type=armor_stand,tag=new_player,limit=1] id run scoreboard players add @e[type=armor_stand,tag=new_player,limit=1] id 1
+execute if score @s id = @e[type=armor_stand,tag=new_player,limit=1] id run function player_models:id
