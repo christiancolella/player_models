@@ -13,10 +13,15 @@ scoreboard objectives add cos_y dummy
 scoreboard objectives add sin_y dummy
 
 scoreboard objectives add click minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add inventory dummy
 scoreboard objectives add execute dummy
 
 # set values of constants
 scoreboard players set #-1 constants -1
+scoreboard players set #2 constants 2
+scoreboard players set #8 constants 8
+scoreboard players set #10 constants 10
+scoreboard players set #100 constants 100
 scoreboard players set #1000 constants 1000
 scoreboard players set #90000 constants 90000
 scoreboard players set #180000 constants 180000

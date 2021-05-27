@@ -1,0 +1,6 @@
+{
+    "parent": "player_models:template/alex/left_leg",
+    "textures": {
+        "skin": "player_models:skins/alex_skin"
+    }
+}

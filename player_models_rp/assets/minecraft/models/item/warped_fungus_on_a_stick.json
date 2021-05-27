@@ -1,0 +1,73 @@
+{
+    "parent": "minecraft:item/handheld_rod",
+    "textures": {
+      "layer0": "minecraft:item/warped_fungus_on_a_stick"
+    },
+    "overrides": [
+        { "predicate": {"custom_model_data": 0}, "model": "minecraft:item/warped_fungus_on_a_stick" },
+        { "predicate": {"custom_model_data": 101}, "model": "player_models:item/position" },
+        { "predicate": {"custom_model_data": 102}, "model": "player_models:item/rotation" },
+        { "predicate": {"custom_model_data": 103}, "model": "player_models:item/pose" },
+        { "predicate": {"custom_model_data": 104}, "model": "player_models:item/previous_skin" },
+        { "predicate": {"custom_model_data": 105}, "model": "player_models:item/next_skin" },
+        { "predicate": {"custom_model_data": 106}, "model": "player_models:item/delete" },
+        { "predicate": {"custom_model_data": 107}, "model": "player_models:item/back" },
+
+        { "predicate": {"custom_model_data": 108}, "model": "player_models:item/x_position" },
+        { "predicate": {"custom_model_data": 109}, "model": "player_models:item/y_position" },
+        { "predicate": {"custom_model_data": 110}, "model": "player_models:item/z_position" },
+
+        { "predicate": {"custom_model_data": 111}, "model": "player_models:item/x_position/0" },
+        { "predicate": {"custom_model_data": 112}, "model": "player_models:item/x_position/1" },
+        { "predicate": {"custom_model_data": 113}, "model": "player_models:item/x_position/2" },
+        { "predicate": {"custom_model_data": 114}, "model": "player_models:item/x_position/3" },
+        { "predicate": {"custom_model_data": 115}, "model": "player_models:item/x_position/4" },
+        { "predicate": {"custom_model_data": 116}, "model": "player_models:item/x_position/5" },
+
+        { "predicate": {"custom_model_data": 117}, "model": "player_models:item/y_position/0" },
+        { "predicate": {"custom_model_data": 118}, "model": "player_models:item/y_position/1" },
+        { "predicate": {"custom_model_data": 119}, "model": "player_models:item/y_position/2" },
+        { "predicate": {"custom_model_data": 120}, "model": "player_models:item/y_position/3" },
+        { "predicate": {"custom_model_data": 121}, "model": "player_models:item/y_position/4" },
+        { "predicate": {"custom_model_data": 122}, "model": "player_models:item/y_position/5" },
+
+        { "predicate": {"custom_model_data": 123}, "model": "player_models:item/z_position/0" },
+        { "predicate": {"custom_model_data": 124}, "model": "player_models:item/z_position/1" },
+        { "predicate": {"custom_model_data": 125}, "model": "player_models:item/z_position/2" },
+        { "predicate": {"custom_model_data": 126}, "model": "player_models:item/z_position/3" },
+        { "predicate": {"custom_model_data": 127}, "model": "player_models:item/z_position/4" },
+        { "predicate": {"custom_model_data": 128}, "model": "player_models:item/z_position/5" },
+
+        { "predicate": {"custom_model_data": 129}, "model": "player_models:item/x_rotation/0" },
+        { "predicate": {"custom_model_data": 130}, "model": "player_models:item/x_rotation/1" },
+        { "predicate": {"custom_model_data": 131}, "model": "player_models:item/x_rotation/2" },
+        { "predicate": {"custom_model_data": 132}, "model": "player_models:item/x_rotation/3" },
+        { "predicate": {"custom_model_data": 133}, "model": "player_models:item/x_rotation/4" },
+        { "predicate": {"custom_model_data": 134}, "model": "player_models:item/x_rotation/5" },
+
+        { "predicate": {"custom_model_data": 135}, "model": "player_models:item/y_rotation/0" },
+        { "predicate": {"custom_model_data": 136}, "model": "player_models:item/y_rotation/1" },
+        { "predicate": {"custom_model_data": 137}, "model": "player_models:item/y_rotation/2" },
+        { "predicate": {"custom_model_data": 138}, "model": "player_models:item/y_rotation/3" },
+        { "predicate": {"custom_model_data": 139}, "model": "player_models:item/y_rotation/4" },
+        { "predicate": {"custom_model_data": 140}, "model": "player_models:item/y_rotation/5" },
+
+        { "predicate": {"custom_model_data": 141}, "model": "player_models:item/z_rotation/0" },
+        { "predicate": {"custom_model_data": 142}, "model": "player_models:item/z_rotation/1" },
+        { "predicate": {"custom_model_data": 143}, "model": "player_models:item/z_rotation/2" },
+        { "predicate": {"custom_model_data": 144}, "model": "player_models:item/z_rotation/3" },
+        { "predicate": {"custom_model_data": 145}, "model": "player_models:item/z_rotation/4" },
+        { "predicate": {"custom_model_data": 146}, "model": "player_models:item/z_rotation/5" },
+
+        { "predicate": {"custom_model_data": 147}, "model": "player_models:item/x_rotation" },
+        { "predicate": {"custom_model_data": 148}, "model": "player_models:item/y_rotation" },
+        { "predicate": {"custom_model_data": 149}, "model": "player_models:item/z_rotation" },
+
+        { "predicate": {"custom_model_data": 150}, "model": "player_models:item/head" },
+        { "predicate": {"custom_model_data": 151}, "model": "player_models:item/body" },
+        { "predicate": {"custom_model_data": 152}, "model": "player_models:item/right_arm" },
+        { "predicate": {"custom_model_data": 153}, "model": "player_models:item/left_arm" },
+        { "predicate": {"custom_model_data": 154}, "model": "player_models:item/right_leg" },
+        { "predicate": {"custom_model_data": 155}, "model": "player_models:item/left_leg" }
+    ]
+}

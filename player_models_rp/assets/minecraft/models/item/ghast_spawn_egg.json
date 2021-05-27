@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/template_spawn_egg",
+  "overrides": [
+    { "predicate": {"custom_model_data": 0}, "model": "minecraft:item/ghast_spawn_egg" },
+    { "predicate": {"custom_model_data": 101}, "model": "player_models:item/new_player" }
+  ]
+}

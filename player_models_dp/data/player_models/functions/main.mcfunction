@@ -1,12 +1,12 @@
 # new player
 scoreboard players set @e[type=armor_stand,tag=new_player] id 1
-execute as @e[type=armor_stand,tag=player] run function player_models:id
+execute as @e[type=armor_stand,tag=player] run function player_models:misc/id
 
 ## summon bones
 execute as @e[type=armor_stand,tag=new_player] at @s run summon armor_stand ~ ~0.075 ~ {id:"armor_stand",Marker:1b,Invisible:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:melon_slice",Count:1b,tag:{Pos:[0.0d,0.0d,0.0d],Rotation:0.0f,Pose:{Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f],RightArm:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]}}},{id:"minecraft:melon_slice",Count:1b,tag:{Offset:[0.0d,0.075d,0.0d]}},{},{id:"minecraft:melon_slice",Count:1b,tag:{CustomModelData:1}}],Tags:["head","new_bone"]}
 execute as @e[type=armor_stand,tag=new_player] at @s run summon armor_stand ~ ~0.075 ~ {id:"armor_stand",Marker:1b,Invisible:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:melon_slice",Count:1b,tag:{Pos:[0.0d,0.0d,0.0d],Rotation:0.0f,Pose:{Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f],RightArm:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]}}},{id:"minecraft:melon_slice",Count:1b,tag:{Offset:[0.0d,0.075d,0.0d]}},{},{id:"minecraft:melon_slice",Count:1b,tag:{CustomModelData:2}}],Tags:["body","new_bone"]}
-execute as @e[type=armor_stand,tag=new_player] at @s run summon armor_stand ~0.35 ~-0.05 ~ {id:"armor_stand",Marker:1b,Invisible:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:melon_slice",Count:1b,tag:{Pos:[0.0d,0.0d,0.0d],Rotation:0.0f,Pose:{Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f],RightArm:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]}}},{id:"minecraft:melon_slice",Count:1b,tag:{Offset:[0.35d,-0.05d,0.0d]}},{},{id:"minecraft:melon_slice",Count:1b,tag:{CustomModelData:3}}],Tags:["right_arm","new_bone"]}
-execute as @e[type=armor_stand,tag=new_player] at @s run summon armor_stand ~-0.35 ~-0.05 ~ {id:"armor_stand",Marker:1b,Invisible:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:melon_slice",Count:1b,tag:{Pos:[0.0d,0.0d,0.0d],Rotation:0.0f,Pose:{Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f],RightArm:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]}}},{id:"minecraft:melon_slice",Count:1b,tag:{Offset:[-0.35d,-0.05d,0.0d]}},{},{id:"minecraft:melon_slice",Count:1b,tag:{CustomModelData:4}}],Tags:["left_arm","new_bone"]}
+execute as @e[type=armor_stand,tag=new_player] at @s run summon armor_stand ~0.343 ~-0.05 ~ {id:"armor_stand",Marker:1b,Invisible:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:melon_slice",Count:1b,tag:{Pos:[0.0d,0.0d,0.0d],Rotation:0.0f,Pose:{Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f],RightArm:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]}}},{id:"minecraft:melon_slice",Count:1b,tag:{Offset:[0.343d,-0.05d,0.0d]}},{},{id:"minecraft:melon_slice",Count:1b,tag:{CustomModelData:3}}],Tags:["right_arm","new_bone"]}
+execute as @e[type=armor_stand,tag=new_player] at @s run summon armor_stand ~-0.343 ~-0.05 ~ {id:"armor_stand",Marker:1b,Invisible:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:melon_slice",Count:1b,tag:{Pos:[0.0d,0.0d,0.0d],Rotation:0.0f,Pose:{Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f],RightArm:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]}}},{id:"minecraft:melon_slice",Count:1b,tag:{Offset:[-0.343d,-0.05d,0.0d]}},{},{id:"minecraft:melon_slice",Count:1b,tag:{CustomModelData:4}}],Tags:["left_arm","new_bone"]}
 execute as @e[type=armor_stand,tag=new_player] at @s run summon armor_stand ~0.125 ~-0.675 ~ {id:"armor_stand",Marker:1b,Invisible:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:melon_slice",Count:1b,tag:{Pos:[0.0d,0.0d,0.0d],Rotation:0.0f,Pose:{Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f],RightArm:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]}}},{id:"minecraft:melon_slice",Count:1b,tag:{Offset:[0.125d,-0.675d,0.0d]}},{},{id:"minecraft:melon_slice",Count:1b,tag:{CustomModelData:5}}],Tags:["right_leg","new_bone"]}
 execute as @e[type=armor_stand,tag=new_player] at @s run summon armor_stand ~-0.125 ~-0.675 ~ {id:"armor_stand",Marker:1b,Invisible:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:melon_slice",Count:1b,tag:{Pos:[0.0d,0.0d,0.0d],Rotation:0.0f,Pose:{Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f],RightArm:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]}}},{id:"minecraft:melon_slice",Count:1b,tag:{Offset:[-0.125d,-0.675d,0.0d]}},{},{id:"minecraft:melon_slice",Count:1b,tag:{CustomModelData:6}}],Tags:["left_leg","new_bone"]}
 
@@ -25,9 +25,12 @@ tag @e[type=armor_stand,tag=new_player] remove new_player
 team join aqua @e[type=armor_stand,tag=bone]
 execute as @e[type=armor_stand,tag=bone] run data merge entity @s {Glowing:0b}
 
-scoreboard players set @a temp 0
 tag @a remove hover
-function player_models:ray/main
+execute as @a[tag=player_models] run function player_models:ray/main
+
+scoreboard players set @a[tag=!player_models] inventory 1
+execute as @a[tag=player_models] run function player_models:inventory/main
+scoreboard players set @a click 0
 
 # transform
 scoreboard players set @e[type=armor_stand,tag=player] temp 0
@@ -66,6 +69,7 @@ scoreboard players set @e[type=armor_stand] temp 0
 function player_models:transform/send_trig
 
 execute as @e[type=armor_stand,tag=bone] run function player_models:transform/position
+execute as @e[type=armor_stand,tag=player] run data modify entity @s Pos set from entity @s ArmorItems[0].tag.Pos
 
 ## player spawn egg
-## give @p bee_spawn_egg{display:{Name:"{\"text\":\"New Player\",\"color\":\"aqua\",\"italic\":false}"},CustomModelData:101,EntityTag:{id:"armor_stand",Marker:1b,Invisible:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:melon_slice",Count:1b,tag:{Pos:[0.0d,0.0d,0.0d],Rotation:0.0f,Pose:{Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f],RightArm:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]}}},{},{},{}],Tags:["new_player"]}}
+## give @p ghast_spawn_egg{display:{Name:"{\"text\":\"New Player\",\"color\":\"aqua\",\"italic\":false}"},CustomModelData:101,EntityTag:{id:"armor_stand",Marker:1b,Invisible:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:melon_slice",Count:1b,tag:{Pos:[0.0d,0.0d,0.0d],Rotation:0.0f,Pose:{Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f],RightArm:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f]}}},{},{},{}],Tags:["new_player"]}}
