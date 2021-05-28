@@ -24,27 +24,16 @@ const skin_type = function (uuid: string) {
     }
 };
 
-async function init() {
 
-    const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout
-    });
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-    const ask = (query: string): Promise<string> => new Promise((resolve) => rl.question(query, resolve));
+const ask = (query: string): Promise<string> => new Promise((resolve) => rl.question(query, resolve));
 
-    const username = (await ask("> What is your username? ")).toLowerCase();
-    rl.close();
-
-    // const username = "razboy20";
-    const uuid = (await (await fetch("https://api.mojang.com/users/profiles/minecraft/" + username)).json()).id;
-    console.log(`${username} -> ${uuid}`);
-
-    const encoded_skin_url = (await (await fetch("https://sessionserver.mojang.com/session/minecraft/profile/" + uuid)).json()).properties[0].value;
-
-    const skin_url = "https://textures.minecraft.net" + new URL(JSON.parse(Buffer.from(encoded_skin_url, "base64").toString("utf8")).textures.SKIN.url).pathname;
-    //console.log(skin_url);
-
+function init2(username: string, uuid: string, skin_url: string): Promise<void> {
+    return new Promise((resolve) => {
     https.get(skin_url, async (res) => {
         // Image will be stored at this path
         const path = `../assets/player_models/textures/skins/${username.toLowerCase()}.png`;
@@ -73,19 +62,28 @@ async function init() {
                 }, null, 4), { encoding: "utf8", flag: "w" });
             }
 
-            console.log("\nModel/texture files generated. Generating melon_slice.json predicate data...");
+            console.log("\nModel/texture files generated.");
+
+            const generate_predicates = await ask("> Would you like to generate melon_slice.json predicates? (WARNING it will reformat the entire file) [y/n] ");
+
+            if (generate_predicates.toLowerCase().trim() != "y") {
+                console.log("\nExiting generator. If you typed the wrong answer above, run the program again.");
+                return resolve();
+            }
+
+            console.log("Generating melon_slice.json predicate data...");
 
             const predicates: Predicates = JSON.parse((await fs.readFile("../assets/minecraft/models/item/melon_slice.json")).toString("utf8"));
 
             if (!predicates.overrides || predicates.overrides.length <= 0) {
                 console.log("\nError, melon_slice.json file seems to be missing data. Exiting...");
-                return;
+                return resolve();
             }
 
             for (const predicate of predicates.overrides) {
                 if (predicate.model.includes(username)) {
                     console.log(`\nError, model data for ${username} already exists within melon_slice.json. To fix, please remove. Exiting...`);
-                    return;
+                    return resolve();
                 }
             }
 
@@ -104,9 +102,33 @@ async function init() {
             //
             // output_predicates.overrides = output_predicates.overrides.map((e: Override) => JSON.stringify(e));
 
-            await fs.writeFile("../assets/minecraft/models/item/melon_slice.json", JSON.stringify(predicates, null, 4), { encoding: "utf8", flag: "w" });
+            await fs.writeFile("../assets/minecraft/models/item/melon_slice.json", JSON.stringify(predicates, null, 4), {
+                encoding: "utf8",
+                flag: "w"
+            });
+
+            return resolve();
         });
     });
+});
+}
+
+async function init() {
+
+    const username = (await ask("> What is your username? ")).toLowerCase();
+
+    // const username = "razboy20";
+    const uuid = (await (await fetch("https://api.mojang.com/users/profiles/minecraft/" + username)).json()).id;
+    console.log(`${username} -> ${uuid}`);
+
+    const encoded_skin_url = (await (await fetch("https://sessionserver.mojang.com/session/minecraft/profile/" + uuid)).json()).properties[0].value;
+
+    const skin_url = "https://textures.minecraft.net" + new URL(JSON.parse(Buffer.from(encoded_skin_url, "base64").toString("utf8")).textures.SKIN.url).pathname;
+    //console.log(skin_url);
+
+    await init2(username, uuid, skin_url);
+
+
 }
 
 interface Predicates {
@@ -135,4 +157,4 @@ interface Textures {
 }
 
 
-init().then();
+init().then(() => rl.close());
