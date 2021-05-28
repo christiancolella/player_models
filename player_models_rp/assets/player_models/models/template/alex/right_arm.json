@@ -10,7 +10,7 @@
         "head": {
             "rotation": [ 0, 180, 0 ],
             "translation": [ 0, -6.4, 0 ],
-            "scale": [ 1.6, 1.6, 1.6 ]
+            "scale": [ 1.5, 1.5, 1.5 ]
         },
         "thirdperson_righthand": {
             "rotation": [ 0, 0, 0 ],
@@ -41,8 +41,8 @@
 			}
 		},
 		{
-			"from": [6.25, -2.25, 5.75],
-			"to": [9.75, 10.25, 10.25],
+			"from": [6.2, -2.2, 5.8],
+			"to": [9.8, 10.2, 10.2],
 			"faces": {
 				"north": {"uv": [11, 9, 11.75, 12], "texture": "#skin"},
 				"east": {"uv": [10, 9, 11, 12], "texture": "#skin"},

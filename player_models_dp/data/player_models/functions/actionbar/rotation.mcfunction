@@ -10,4 +10,4 @@ scoreboard players operation #rotation_1 temp %= #1000 constants
 scoreboard players operation #rotation_1 temp /= #100 constants
 
 # display
-title @s actionbar [{"text":"Rotation: [","color":"#202020"},{"storage":"player_models:main","nbt":"signs[0]","color":"dark_green"},{"score":{"name":"#rotation_0","objective":"temp"},"color":"dark_green"},{"text":".","color":"dark_green"},{"score":{"name":"#rotation_1","objective":"temp"},"color":"dark_green"},{"text":"]","color":"#202020"}]
+title @s actionbar [{"text":"Rotation: [","color":"#202020"},{"score":{"name":"#rotation_0","objective":"temp"},"color":"dark_green"},{"text":".","color":"dark_green"},{"score":{"name":"#rotation_1","objective":"temp"},"color":"dark_green"},{"text":"]","color":"#202020"}]
