@@ -1,6 +1,0 @@
-{
-    "parent": "player_models:template/alex/right_arm",
-    "textures": {
-        "skin": "player_models:skins/razboy20"
-    }
-}
